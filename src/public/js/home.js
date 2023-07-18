@@ -42,7 +42,7 @@ socketClient.on('newUser',(data)=>{
         Swal.fire({
             text:data,
             toast:true,
-            position:top-right
+            position:"top-right"
         })
     }
 })
