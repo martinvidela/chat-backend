@@ -39,6 +39,10 @@ socketClient.on('messageHistory', (dataServer) => {
 socketClient.on('newUser',(data)=>{
     if(user){
         //si ya el usuario esta autenticado, entonces puede recibir notificaciones
-        
+        Swal.fire({
+            text:data,
+            toast:true,
+            position:top-right
+        })
     }
 })
